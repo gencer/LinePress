@@ -11,17 +11,17 @@ namespace LinePress.Options
    {
       #region Fields
 
-      private bool compressEmptyLines = true;
-      private bool compressCustomTokens = true;
+      private bool compressEmptyLines = false;
+      private bool compressCustomTokens = false;
 
       private int emptyLineScale = 50;
       private int customTokensScale = 25;
 
-      private int lineSpacingPercent = 0;
+      private int lineSpacingPercent = 45;
       private bool applySpacingToComments = false;
 
       private ObservableCollection<string> customTokens
-         = new ObservableCollection<string> { "{", "}" };
+         = new ObservableCollection<string> {};
 
       #endregion
 
